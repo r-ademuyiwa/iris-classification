@@ -12,6 +12,9 @@ dependencies = [
   "pandas",
   "matplotlib",
   "seaborn",
+  "numpy",
+  "scikit-learn",
+  "statsmodels"
 
 ]
 

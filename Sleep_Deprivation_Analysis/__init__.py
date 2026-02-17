@@ -2,17 +2,35 @@ import csv
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+from sklearn.linear_model import LinearRegression
 
-df= pd.read_csv("Sleep_Deprivation_Analysis\sleep_deprevation.csv" ,
-                usecols = ['Sleep_Hours' , 'PVT_Reaction_Time'])
+df= pd.read_csv("sleep_deprevation.csv")
+df.columns = df.columns.str.strip()
 
-x = df['Sleep_Hours']
-y = df['PVT_Reaction_Time']
-plt.xlabel('Sleep Hours')
-plt.ylabel('PVT Reaction Time')
-plt.scatter(x,y)
-plt.show()
-"""plt.hist(df['Sleep_Hours'])
+target_col = "PVT_Reaction_Time"
 
-plt.show()"""
+for col in df.columns:
+    if col == target_col:
+        continue
+    if not pd.api.types.is_numeric_dtype(df[col]):
+        print("Skipping non-numeric column:", col)
+        continue
+
+    temp = df[[col, target_col]].dropna()
+
+    x = df[[col]]
+    y = df[target_col]
+
+    model = LinearRegression()
+    model.fit(x,y)
+
+    print("Feature:" , col)
+    print("Slope:" , model.coef_[0])
+    print("Intercept:" , model.intercept_)
+    print()
+
+def divide (x, y):
+    z = x/ y
+    return z
+
+
