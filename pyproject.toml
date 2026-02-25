@@ -1,21 +1,22 @@
 [project]
-name = "Sleep_Deprivation_Analysis"
+name = "Flower-Classification"
 version = "0.0.1"
-description = "Looking the effects of Sleep Deprivation on Cognitive Performance"
+description = "Making an ML model that analyses different iris flowers and classifies them"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [{ name = "Ridwan", email = "ridwanade@hotmail.com" }]
 dependencies = [
+  "click",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "scikit-learn",
   # dependencies go here
   "scipy>=1.15.3",
-  "pandas",
-  "matplotlib",
   "seaborn",
-  "numpy",
-  "scikit-learn",
-  "statsmodels"
-
+  "statsmodels",
+  "typer",
 ]
 
 [dependency-groups]
@@ -68,5 +69,3 @@ exclude = [
   "README.md",
   # add other files or directories to exclude from linting here
 ]
-
-
