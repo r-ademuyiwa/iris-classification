@@ -1,13 +1,22 @@
 [project]
-name = "placeholder_project_name"
+name = "Flower-Classification"
 version = "0.0.1"
-description = "Your project description here"
+description = "Making an ML model that analyses different iris flowers and classifies them"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [{ name = "Ridwan", email = "ridwanade@hotmail.com" }]
 dependencies = [
+  "click",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "scikit-learn",
   # dependencies go here
+  "scipy>=1.15.3",
+  "seaborn",
+  "statsmodels",
+  "typer",
 ]
 
 [dependency-groups]
@@ -17,13 +26,14 @@ dev = [
   "coverage",
   "isort",
   "mypy",
+  "pandas-stubs",
   "pydantic[mypy]",
   "pytest",
   "pytest-cov",
   "pytest-pretty",
   "ruff",
   "tombi",
-  "uv",
+  "uv"
 ]
 
 [build-system]
@@ -60,5 +70,3 @@ exclude = [
   "README.md",
   # add other files or directories to exclude from linting here
 ]
-
-
