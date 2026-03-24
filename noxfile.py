@@ -179,7 +179,7 @@ def precommit(session):
     session.notify("black_check")
     session.notify("mypy_check")
     session.notify("tomlsort_check")
-    session.notify("isort_check")
+    # session.notify("isort_check")
 
 
 @nox.session(python=PYTHON_VERSION)

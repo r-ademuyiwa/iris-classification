@@ -26,13 +26,14 @@ dev = [
   "coverage",
   "isort",
   "mypy",
+  "pandas-stubs",
   "pydantic[mypy]",
   "pytest",
   "pytest-cov",
   "pytest-pretty",
   "ruff",
   "tombi",
-  "uv",
+  "uv"
 ]
 
 [build-system]

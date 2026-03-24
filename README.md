@@ -1,6 +1,27 @@
-# PythonProjectTemplate
-Template for Python projects
+# Iris Dataset Classifier
+Iris classifier project.
 
+## Description
+This is a Machine Learning model for multiclass classification that uses 3 different types of classifiers
+and scalers to label the flowers in the Iris dataset. 
+
+The classifiers are KNearestNeighbours (KNN), Decision Trees and
+Random Forrest.
+
+The three scaling options are Standard, Robust and Minmax Scalers. These scaling are only possible when using the KNN
+classifier.
+
+
+## How to run
+To run this project you would call uv using ```uv run```. Input the file path of the pyproject and by the file path of the dataset and 
+then the type of classifier that the user wants to use in the command line.
+
+If running KNN:
+ ```bash
+uv run .\Flower_Classification\Class_code.py .\Flower_Classification\iris.csv KNN  
+````
+
+After this, the program will ask the user to in put the type of scaler to be used.
 
 ### Development setup
 
