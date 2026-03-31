@@ -18,7 +18,7 @@ then the type of classifier that the user wants to use in the command line.
 
 If running KNN:
  ```bash
-uv run .\Flower_Classification\Class_code.py .\Flower_Classification\iris.csv KNN  
+uv run .\iris_classification\Class_code.py .\iris_Classification\iris.csv KNN  
 ````
 
 After this, the program will ask the user to in put the type of scaler to be used.
