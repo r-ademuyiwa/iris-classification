@@ -1,4 +1,4 @@
-# PythonProjectTemplate
+# iris_classification
 Template for Python projects
 
 
