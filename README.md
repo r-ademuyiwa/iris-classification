@@ -1,5 +1,5 @@
 # iris_classification
-Template for Python projects
+Template for ML classification project
 
 
 ### Development setup
