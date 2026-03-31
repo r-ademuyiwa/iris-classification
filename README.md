@@ -1,4 +1,4 @@
-# iris_classification
+# Iris Classification Project
 Template for ML classification project
 
 
